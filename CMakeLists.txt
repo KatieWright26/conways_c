@@ -58,9 +58,9 @@ add_definitions(-DBOARD_SIZE=100)
 
 # Uncomment each group below as you progress through the challenge
 
-#add_library(is_over_populated is_over_populated.c)
-#add_executable(is_over_populated_test is_over_populated_test.cpp)
-#target_link_libraries(is_over_populated_test is_over_populated gtest_main)
+add_library(is_over_populated is_over_populated.c)
+add_executable(is_over_populated_test is_over_populated_test.cpp)
+target_link_libraries(is_over_populated_test is_over_populated gtest_main)
 
 #add_library(is_under_populated is_under_populated.c)
 #add_executable(is_under_populated_test is_under_populated_test.cpp)
