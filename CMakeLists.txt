@@ -62,9 +62,9 @@ add_library(is_over_populated is_over_populated.c)
 add_executable(is_over_populated_test is_over_populated_test.cpp)
 target_link_libraries(is_over_populated_test is_over_populated gtest_main)
 
-#add_library(is_under_populated is_under_populated.c)
-#add_executable(is_under_populated_test is_under_populated_test.cpp)
-#target_link_libraries(is_under_populated_test is_under_populated gtest_main)
+add_library(is_under_populated is_under_populated.c)
+add_executable(is_under_populated_test is_under_populated_test.cpp)
+target_link_libraries(is_under_populated_test is_under_populated gtest_main)
 
 #add_library(is_ressurectable is_ressurectable.c)
 #add_executable(is_ressurectable_test is_ressurectable_test.cpp)
