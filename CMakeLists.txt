@@ -74,9 +74,9 @@ add_library(is_index_out_of_bounds is_index_out_of_bounds.c)
 add_executable(is_index_out_of_bounds_test is_index_out_of_bounds_test.cpp)
 target_link_libraries(is_index_out_of_bounds_test is_index_out_of_bounds gtest_main)
 
-#add_library(count_alive_neighbours count_alive_neighbours.c)
-#add_executable(count_alive_neighbours_test count_alive_neighbours_test.cpp)
-#target_link_libraries(count_alive_neighbours_test count_alive_neighbours is_index_out_of_bounds gtest_main)
+add_library(count_alive_neighbours count_alive_neighbours.c)
+add_executable(count_alive_neighbours_test count_alive_neighbours_test.cpp)
+target_link_libraries(count_alive_neighbours_test count_alive_neighbours is_index_out_of_bounds gtest_main)
 
 #add_library(next_cell_state next_cell_state.c)
 #add_executable(next_cell_state_test next_cell_state_test.cpp)

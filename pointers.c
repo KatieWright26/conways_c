@@ -1,7 +1,7 @@
 #include <stdint.h> //gives uint8_t etc
 #include <stdlib.h> //gives malloc + free
 #include <stdio.h> //give printf
-
+#include <stdbool.h>
 //function by copy
 //
 
@@ -9,7 +9,14 @@
 //
 
 int main(){
-  printf("%u\n", 1);
+  bool is_cool = true;
+  bool *pointer_to_is_cool = &is_cool;
+
+  *pointer_to_is_cool = false; //where the magic is happening 
+
+  bool is_cool_copy = is_cool; //is_cool_copy will be **false**
+  printf("is cool copy equals %d\n", is_cool_copy);
+  printf("is cool equals %d\n", is_cool);
 
   //create an int.
   //
