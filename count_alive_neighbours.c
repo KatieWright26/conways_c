@@ -2,12 +2,6 @@
 #include "is_index_out_of_bounds.h"
 
 uint8_t count_alive_neighbours(bool* board, uint16_t board_size, uint16_t row_num, uint16_t col_num){
-	//find the true bool in the board array
-	//check surrounding items for other true bools
-	//if index of surrounding item is negetive, move to next item
-	//if item is true, count neighbours
-	//if item is false, move on
-	//bool i = board[row_num * board_size + col_num];
 	uint8_t count = 0;
 
 	for(int8_t i = -1; i <= 1; i++) {
